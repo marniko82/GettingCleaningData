@@ -175,6 +175,6 @@ Body Gyro Jerk Magnitude Frequency std
 
 The new all_data frame was then used to make a tidy data set with average values for each feature per activity and per test subject. all_data was melted using melt() with parameters id=c("Subject", "Activity") and measure.vars = all other columns of the data frame. 
 
-The melted table was then cast using dcast(melted,  Subject + Activity ~ variable,mean).
+The melted table was then cast using dcast(melted,  Subject + Activity ~ variable,mean). By applying this transformation, an average value of all observations for each feature was summarized by Subject and Activity. The final output of the procedure is a data frame with 180 rows (30 Subjects  x 6 Activities) by 68 columns (first two columns denote Subject and Activity whereas the remaining ones represent the averages calculated).
 
 Finally, the result was saved as a .txt using write.table() with row.names=FALSE parameter.
