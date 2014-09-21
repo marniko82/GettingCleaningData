@@ -13,7 +13,7 @@ Variables representing the average of the mean, calculated per Subject/Activity 
 
 Variables representing the average of the standard deviation, calculated per Subject/Activity combination (each of the six activities for each subject), 33 in total,  are identified by the descriptor “std”. Out of these 33 features, 20 are time domain features  and 13 are frequency domain features (identified by “Frequency” in the name). All features are normalized and bounded within [-1,1] with no measure. 
 
-[b]Please refer to README.md for a complete description of the process of obtaining the data set, including transformations performed.[/b]
+Please refer to README.md for a complete description of the process of obtaining the data set, including transformations performed.
 
 
 Complete list of features:
